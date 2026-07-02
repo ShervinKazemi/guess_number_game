@@ -1,0 +1,12 @@
+@use "../abstractions" as *;
+
+.heading-1 {
+    font-size: 3.8rem;
+    font-family: $font-display;
+    color: $color-primary;
+}
+
+.paragraph {
+    font-size: 1.2rem;
+    color: $color-text-grey;
+}

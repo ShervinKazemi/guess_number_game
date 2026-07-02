@@ -15,6 +15,54 @@ body {
   background-color: #0B1326;
   font-family: "Geist";
   line-height: 1.6;
+  font-size: 1rem;
+}
+
+.heading-1 {
+  font-size: 3.8rem;
+  font-family: "Geist";
+  color: #ADC6FF;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  color: #C2C6D6;
+}
+
+.btn:link, .btn:visited {
+  padding: 0.8rem 1.2rem;
+  font-size: 1.6rem;
+  font-family: "Inter";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  text-decoration: none;
+  color: #DAE2FD;
+}
+.btn--dark {
+  background-color: #171F33;
+  border-radius: 0.8rem;
+  border: 1px solid #424754;
+}
+
+.parent {
+  max-width: 1240px;
+  margin: 100px auto;
+  padding: 0 1.6rem;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #424754;
 }
 
 /*# sourceMappingURL=style.css.map */

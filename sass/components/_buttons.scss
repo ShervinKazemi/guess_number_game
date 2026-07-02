@@ -1,0 +1,24 @@
+@use "../abstractions" as *;
+
+.btn {
+
+    &:link,
+    &:visited {
+        padding: .8rem 1.2rem;
+        font-size: 1.6rem;
+        font-family: $font-body;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.2rem;
+        text-decoration: none;
+        color: $color-text;
+    }
+
+    &--dark {
+        background-color: $color-card;
+        border-radius: $rd-sm;
+        border: 1px solid $color-outline;
+    }
+}
