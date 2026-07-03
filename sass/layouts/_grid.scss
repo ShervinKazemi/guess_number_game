@@ -1,7 +1,16 @@
+@use "../abstractions" as *;
+
 .parent {
     max-width: 1240px;
-    margin: 100px auto;
+    margin: 10rem auto;
     padding: 0 1.6rem;
     display: grid;
     grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: $grid-column-sp;
+    row-gap: $grid-row-sp;
+
+    @include respond(tab-port) {
+        margin: 1.6rem auto;
+    }
 }

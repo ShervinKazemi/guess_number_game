@@ -1,0 +1,160 @@
+@use "../abstractions" as *;
+
+.secret-number {
+    grid-row: 2 / 3;
+    grid-column: 2 / 6;
+    background-color: $color-card;
+    display: flex;
+    padding: 8rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $color-outline;
+    border-radius: $rd-md;
+
+    &__number {
+        font-size: 12rem;
+        color: $color-primary;
+    }
+}
+
+.player {
+    background-color: $color-card;
+    min-height: 38rem;
+    border-radius: $rd-md;
+    border: 1px solid $color-outline;
+    padding: 1.6rem;
+    display: grid;
+    grid-template-rows: 6.8rem 1fr 6.8rem;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1.6rem;
+    opacity: .4;
+
+    &--0 {
+        grid-row: 3 / 4;
+        grid-column: 1 / span 3;
+    }
+
+    &--1 {
+        grid-row: 3 / 4;
+        grid-column: 4 / -1;
+    }
+
+    &__profile {
+        grid-row: 1/ 2;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        grid-column: 1 / -1;
+        border-bottom: 1px solid $color-outline;
+    }
+
+    &__logo-box {
+        width: 4rem;
+        height: 4rem;
+
+        padding: .8rem;
+
+        border-radius: 50%;
+        background: $color-grey;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__logo {
+        width: 64%;
+        height: 64%;
+    }
+
+    &__name {
+        margin-right: auto;
+        margin-left: 1.2rem;
+        color: $color-text;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    &__score {
+        color: $color-text;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    &__status {
+        grid-row: 3 /4;
+        grid-column: 1 / -1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid $color-outline;
+    }
+
+    &__total {
+        font-size: 1.6rem;
+        color: $color-text-grey;
+
+        &-score {
+            color: $color-text;
+        }
+    }
+
+    &__turn {
+        display: none;
+    }
+
+
+    &__playing {
+        display: none;
+    }
+
+    &__waiting {
+        grid-row: 2 / 3;
+        grid-column: 1 / -1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.4rem;
+    }
+
+
+    &__time {
+        width: 8.4rem;
+        height: 8.4rem;
+    }
+
+    &__state {
+        font-family: $font-code;
+        color: $color-green;
+        font-size: 2.4rem;
+    }
+
+    &--active {
+        opacity: 1;
+
+        .player__playing {
+            grid-row: 2 / 3;
+            grid-column: 1 / -1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .player__waiting {
+            display: none;
+        }
+
+        .player__turn {
+            display: block;
+            font-size: 1.2rem;
+            background-color: rgba($color: #4D8EFF, $alpha: .1);
+            color: $color-primary;
+            padding: .8rem 1.6rem;
+            border-radius: 9999px;
+        }
+    }
+}

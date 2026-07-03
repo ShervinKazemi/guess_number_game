@@ -11,6 +11,19 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem : 10px/16px
+
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+
+    @include respond(phone) {
+        font-size: 32.5%;
+    }
+}
+
+*::selection {
+    background-color: $color-primary;
+    color: $color-background;
 }
 
 body {

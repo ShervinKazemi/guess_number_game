@@ -4,6 +4,20 @@
     font-size: 3.8rem;
     font-family: $font-display;
     color: $color-primary;
+    font-weight: 900;
+}
+
+.heading-3 {
+    font-size: 2.4rem;
+    font-family: $font-display;
+    color: $color-primary;
+    font-weight: 700;
+}
+
+.heading-5 {
+    font-size: 1.6rem;
+    color: $color-text;
+    font-weight: 600;
 }
 
 .paragraph {

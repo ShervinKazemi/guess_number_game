@@ -2,6 +2,7 @@
 
 .btn {
 
+    &,
     &:link,
     &:visited {
         padding: .8rem 1.2rem;
@@ -13,12 +14,21 @@
         justify-content: space-between;
         gap: 1.2rem;
         text-decoration: none;
-        color: $color-text;
+        display: flex;
+        justify-content: center;
     }
 
     &--dark {
         background-color: $color-card;
         border-radius: $rd-sm;
         border: 1px solid $color-outline;
+        color: $color-text;
+    }
+
+    &--light {
+        background-color: $color-primary;
+        border-radius: $rd-sm;
+        border: 1px solid $color-outline;
+        color: $color-card;
     }
 }
