@@ -16,6 +16,12 @@
         font-size: 12rem;
         color: $color-primary;
     }
+
+    @include respond(phone) {
+        grid-column: 1 / -1;
+    }
+
+
 }
 
 .player {
@@ -34,11 +40,20 @@
     &--0 {
         grid-row: 3 / 4;
         grid-column: 1 / span 3;
+
+        @include respond(phone) {
+            grid-column: 1 / -1;
+        }
     }
 
     &--1 {
         grid-row: 3 / 4;
         grid-column: 4 / -1;
+
+        @include respond(phone) {
+            grid-row: 4 / 5;
+            grid-column: 1 / -1;
+        }
     }
 
     &__profile {

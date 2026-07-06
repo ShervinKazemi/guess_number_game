@@ -149,6 +149,11 @@ body {
   font-size: 12rem;
   color: #ADC6FF;
 }
+@media (max-width: 37.5em) {
+  .secret-number {
+    grid-column: 1/-1;
+  }
+}
 
 .player {
   background-color: #171F33;
@@ -167,9 +172,20 @@ body {
   grid-row: 3/4;
   grid-column: 1/span 3;
 }
+@media (max-width: 37.5em) {
+  .player--0 {
+    grid-column: 1/-1;
+  }
+}
 .player--1 {
   grid-row: 3/4;
   grid-column: 4/-1;
+}
+@media (max-width: 37.5em) {
+  .player--1 {
+    grid-row: 4/5;
+    grid-column: 1/-1;
+  }
 }
 .player__profile {
   grid-row: 1/2;
